@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: f44da145182b3e94f8ffaacc2636c17e
+timeCreated: 1436797778
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Hoe (Golden)_0
+    21300002: Hoe (Golden)_1
+    21300004: Hoe (Golden)_2
+    21300006: Hoe (Golden)_3
+    21300008: Hoe (Golden)_4
+    21300010: Hoe (Golden)_5
+    21300012: Hoe (Golden)_6
+    21300014: Hoe (Golden)_7
+    21300016: Hoe (Golden)_8
+    21300018: Hoe (Golden)_9
+    21300020: Hoe (Golden)_10
+    21300022: Hoe (Golden)_11
+    21300024: Hoe (Golden)_12
+    21300026: Hoe (Golden)_13
+    21300028: Hoe (Golden)_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Hoe (Golden)_0
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 152
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hoe (Golden)_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 152
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hoe (Golden)_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 152
+        width: 19
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hoe (Golden)_3
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 152
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hoe (Golden)_4
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 152
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hoe (Golden)_5
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 111
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hoe (Golden)_6
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 111
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hoe (Golden)_7
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 105
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hoe (Golden)_8
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 105
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hoe (Golden)_9
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 105
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hoe (Golden)_10
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 61
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hoe (Golden)_11
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 61
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hoe (Golden)_12
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 62
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hoe (Golden)_13
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 62
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hoe (Golden)_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 63
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

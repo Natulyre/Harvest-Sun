@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 6cc4e5218452ef6438382dc10c7c9029
+timeCreated: 1436797731
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Hammer (Golden)_0
+    21300002: Hammer (Golden)_1
+    21300004: Hammer (Golden)_2
+    21300006: Hammer (Golden)_3
+    21300008: Hammer (Golden)_4
+    21300010: Hammer (Golden)_5
+    21300012: Hammer (Golden)_6
+    21300014: Hammer (Golden)_7
+    21300016: Hammer (Golden)_8
+    21300018: Hammer (Golden)_9
+    21300020: Hammer (Golden)_10
+    21300022: Hammer (Golden)_11
+    21300024: Hammer (Golden)_12
+    21300026: Hammer (Golden)_13
+    21300028: Hammer (Golden)_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Hammer (Golden)_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 172
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hammer (Golden)_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 171
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hammer (Golden)_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 155
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hammer (Golden)_3
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 162
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hammer (Golden)_4
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 162
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hammer (Golden)_5
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 108
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hammer (Golden)_6
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 108
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hammer (Golden)_7
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 98
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hammer (Golden)_8
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 108
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hammer (Golden)_9
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 108
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hammer (Golden)_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 50
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hammer (Golden)_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 50
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hammer (Golden)_12
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 43
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hammer (Golden)_13
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 50
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hammer (Golden)_14
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 50
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

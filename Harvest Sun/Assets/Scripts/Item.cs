@@ -15,6 +15,12 @@ public class Item : MonoBehaviour {
 	
 	void Awake()
 	{
+		//Area of Effects are listed as facing south.
+		//+1 x = right
+		//-1 x = left
+		//+1 y = down
+		//-1 y = up
+
 		AoE = new List<Vector2>();
 	}
 
@@ -63,5 +69,5 @@ public class Item : MonoBehaviour {
 		}
 	}
 
-	protected virtual void Action(){Debug.Log ("Bad");}
+	protected virtual void Action(){}
 }

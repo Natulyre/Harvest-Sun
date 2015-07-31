@@ -43,6 +43,14 @@ public class Player : MonoBehaviour {
 	private bool mActionButton;
 	private bool mItemButton;
 	private bool mInputAllowed;
+	private bool mInventory1Button;
+	private bool mInventory2Button;
+	private bool mInventory3Button;
+	private bool mInventory4Button;
+	private bool mInventory5Button;
+	private bool mInventory6Button;
+	private bool mInventory7Button;
+	private bool mInventory8Button;
 	private bool mDebugButton;
 
 	//Player's movement & position
@@ -79,6 +87,7 @@ public class Player : MonoBehaviour {
 	void Update () 
 	{
 		UpdatePosition();
+		UpdateInventory();
 		HandleInput();
 		HandleActions ();
 	}
@@ -90,6 +99,32 @@ public class Player : MonoBehaviour {
 		mPosition.y = (int)((transform.position.y +POSITION_Y_OFFSET) /PlotGenerator.mTileSize);
 	}
 
+	void UpdateInventory()
+	{
+		int mPreviousItem = mCurrentItem;
+		if (mInventory1Button) {
+			mCurrentItem = 0;
+		} else if (mInventory2Button) {
+			mCurrentItem = 1;
+		} else if (mInventory3Button) {
+			mCurrentItem = 2;
+		} else if (mInventory4Button) {
+			mCurrentItem = 3;
+		} else if (mInventory5Button) {
+			mCurrentItem = 4;
+		} else if (mInventory6Button) {
+			mCurrentItem = 5;
+		} else if (mInventory7Button) {
+			mCurrentItem = 6;
+		} else if (mInventory8Button) {
+			mCurrentItem = 7;
+		} 
+		if (mCurrentItem != mPreviousItem) 
+		{
+			//UpdateInventoryDisplay();
+		}
+	}
+
 	//Update the input states
 	void HandleInput()
 	{
@@ -99,6 +134,14 @@ public class Player : MonoBehaviour {
 		mLeftButton = Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow);
 		mActionButton = Input.GetKey (KeyCode.E) || Input.GetKey (KeyCode.Return);
 		mItemButton = Input.GetKey (KeyCode.F) || Input.GetKey (KeyCode.RightShift);
+		mInventory1Button = Input.GetKey (KeyCode.Alpha1);
+		mInventory2Button = Input.GetKey (KeyCode.Alpha2);
+		mInventory3Button = Input.GetKey (KeyCode.Alpha3);
+		mInventory4Button = Input.GetKey (KeyCode.Alpha4);
+		mInventory5Button = Input.GetKey (KeyCode.Alpha5);
+		mInventory6Button = Input.GetKey (KeyCode.Alpha6);
+		mInventory7Button = Input.GetKey (KeyCode.Alpha7);
+		mInventory8Button = Input.GetKey (KeyCode.Alpha8);
 		mDebugButton = Input.GetKey (KeyCode.Z);
 	}
 

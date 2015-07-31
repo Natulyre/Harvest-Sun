@@ -36,9 +36,14 @@ public class Plot : MonoBehaviour {
 
 	static Plot GetPlot(Vector2 tilePosition)
 	{
+		Plot found = null;
 		foreach (Plot p in PlotGenerator.mPlots)
 		{
+			if (p.mPosition == tilePosition)
+			{
+				found = p;
+			}
 		}
-		return null;
+		return found;
 	}
 }

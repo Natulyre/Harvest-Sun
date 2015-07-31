@@ -17,7 +17,8 @@ public class Player : MonoBehaviour {
 	//Player's inventory
 	public Item[] mInventory;
 	private const int mInventorySize = 8;
-	private int mCurrentItem;
+	private int mCurrentItemSelection;
+	private InventoryHUD mInventoryHUD;
 	//private IPickable mPickedUpItem;
 
 	//Player's state
@@ -64,23 +65,37 @@ public class Player : MonoBehaviour {
 		Init ();
 	}
 
+	void Start()
+	{
+		mInventoryHUD = GameObject.Find("InventoryHUD").GetComponent<InventoryHUD>();
+	}
+
 	//Initialize all variables
 	void Init()
 	{
 		mInputAllowed = true;
 		mDirection = Direction.SOUTH;
 		mRigidBody = GetComponent<Rigidbody2D>();
-		mCurrentItem = 0;
+		mCurrentItemSelection = 0;
 		mMoney = 0;
 		mRocks = 0;
 		mLogs = 0;
 		mIsHoldingSomething = false;
 		mEnergy = 100;
-		for (int i = 0; i<8; i++) 
-		{
-			//Fill the array with nada?
-			//mInventory[i] = null;
-		}
+		Seed turnip = ((GameObject)GameObject.Instantiate(Resources.Load ("Prefab/Items/Seeds/Turnip Seeds"))).GetComponent<Seed>();
+		Seed tomato = ((GameObject)GameObject.Instantiate(Resources.Load ("Prefab/Items/Seeds/Tomato Seeds"))).GetComponent<Seed>();
+		Seed corn =   ((GameObject)GameObject.Instantiate(Resources.Load ("Prefab/Items/Seeds/Corn Seeds"))).GetComponent<Seed>();
+		Tool axe =   ((GameObject)GameObject.Instantiate(Resources.Load ("Prefab/Items/Seeds/Corn Seeds"))).GetComponent<Axe>();
+		Tool sickle =   ((GameObject)GameObject.Instantiate(Resources.Load ("Prefab/Items/Seeds/Corn Seeds"))).GetComponent<Axe>();
+		Tool hammer =   ((GameObject)GameObject.Instantiate(Resources.Load ("Prefab/Items/Seeds/Corn Seeds"))).GetComponent<Axe>();
+		Tool hoe =   ((GameObject)GameObject.Instantiate(Resources.Load ("Prefab/Items/Seeds/Corn Seeds"))).GetComponent<Axe>();
+		Tool water = ((GameObject)GameObject.Instantiate(Resources.Load ("
+		//(Instantiate ("Axe", new Vector3 (0, 0, 0), Quaternion.identity) as GameObject).GetComponents<Axe> ();
+		mInventory = new Item[8]{turnip, new Seed(), new Seed(), new Axe(), new Sickle(), new Hammer(), new Hoe(), new Water()};
+		//for (int i = 0; i< 8; i++) 
+		//{
+		//	mInventory[i] = null;
+		//}
 	}
 
 	//Update the player's logic
@@ -101,27 +116,27 @@ public class Player : MonoBehaviour {
 
 	void UpdateInventory()
 	{
-		int mPreviousItem = mCurrentItem;
+		int mPreviousItem = mCurrentItemSelection;
 		if (mInventory1Button) {
-			mCurrentItem = 0;
+			mCurrentItemSelection = 0;
 		} else if (mInventory2Button) {
-			mCurrentItem = 1;
+			mCurrentItemSelection = 1;
 		} else if (mInventory3Button) {
-			mCurrentItem = 2;
+			mCurrentItemSelection = 2;
 		} else if (mInventory4Button) {
-			mCurrentItem = 3;
+			mCurrentItemSelection = 3;
 		} else if (mInventory5Button) {
-			mCurrentItem = 4;
+			mCurrentItemSelection = 4;
 		} else if (mInventory6Button) {
-			mCurrentItem = 5;
+			mCurrentItemSelection = 5;
 		} else if (mInventory7Button) {
-			mCurrentItem = 6;
+			mCurrentItemSelection = 6;
 		} else if (mInventory8Button) {
-			mCurrentItem = 7;
+			mCurrentItemSelection = 7;
 		} 
-		if (mCurrentItem != mPreviousItem) 
+		if (mCurrentItemSelection != mPreviousItem) 
 		{
-			//UpdateInventoryDisplay();
+			mInventoryHUD.UpdateInventory(mCurrentItemSelection, mInventory);
 		}
 	}
 
@@ -243,14 +258,14 @@ public class Player : MonoBehaviour {
 	void ActivateItem()
 	{
 		//If our current inventory slot has an item
-		if (mInventory [mCurrentItem] != null) 
+		if (mInventory [mCurrentItemSelection] != null) 
 		{
 			//If we have at least 1 energy && enough energy to use the current item.
-			if (mEnergy != 0 && mEnergy > mInventory[mCurrentItem].mEnergyCost)
+			if (mEnergy != 0 && mEnergy > mInventory[mCurrentItemSelection].mEnergyCost)
 			{
 				//Reduce our current energy and use the item
-				mEnergy -= mInventory[mCurrentItem].mEnergyCost;
-				mInventory[mCurrentItem].Use(mPosition, mDirection);
+				mEnergy -= mInventory[mCurrentItemSelection].mEnergyCost;
+				mInventory[mCurrentItemSelection].Use(mPosition, mDirection);
 			}
 			//Otherwise fall down
 			else

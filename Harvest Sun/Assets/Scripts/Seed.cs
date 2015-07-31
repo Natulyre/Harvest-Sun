@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Seed : Item {
 
-	protected Plant mPlantType;
+	public Plant.Type mPlantType;
 	private int mQuantity;
 	private const int SEED_ENERGY_COST = 0;
 	private static Vector2[] SEED_AREA_OF_EFFECT = { new Vector2(-1,-1), new Vector2(-1,0), new Vector2(-1,1)

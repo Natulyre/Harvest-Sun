@@ -3,6 +3,14 @@ using System.Collections;
 
 public class Plant : Resource, ITimeBound, IPickable {
 
+	//Various plant types
+	public enum Type
+	{
+		Turnip,
+		Potato,
+		Corn
+	}
+
 	//Various plant phases
 	protected enum Evolution
 	{
